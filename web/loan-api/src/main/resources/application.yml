@@ -1,0 +1,17 @@
+spring:
+  redis:
+    host: 192.168.1.212
+    port: 7000
+  session:
+    timeout: 6000
+mybatis:
+  type-aliases-package: com.stream.order.mapper
+logging:
+  path: /user/local/log
+  level:
+    com.stream.springboot.web.streamspringbootweb: DEBUG
+    org.springframework.web: INFO
+    org.hibernat: ERROR
+server:
+  port: 8081
+
