@@ -1,9 +1,11 @@
 package com.stream.config;
 
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
 
-@Configuration
+@Component
+@PropertySource("classpath:config/dubbo.properties")
 @ImportResource("classpath:dubbo-comsumer.xml")
 public class DubboConfig {
 }

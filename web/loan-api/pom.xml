@@ -25,6 +25,7 @@
 		<dubbo.version>2.5.5</dubbo.version>
 		<zookeeper.version>3.4.6</zookeeper.version>
 		<zkclient.version>0.1</zkclient.version>
+		<motan.version>0.3.1</motan.version>
 	</properties>
 
 	<dependencies>
@@ -76,7 +77,7 @@
 		<dependency>
 			<groupId>org.apache.zookeeper</groupId>
 			<artifactId>zookeeper</artifactId>
-			<version>3.4.6</version>
+			<version>3.4.8</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.slf4j</groupId>
@@ -94,6 +95,41 @@
 			<version>0.1</version>
 		</dependency>
 		<!--dubbo end-->
+
+
+		<!-- motan start -->
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-core</artifactId>
+			<version>${motan.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.caucho</groupId>
+					<artifactId>hessian</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.caucho</groupId>
+			<artifactId>hessian</artifactId>
+			<version>4.0.51</version>
+		</dependency>
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-transport-netty</artifactId>
+			<version>${motan.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-springsupport</artifactId>
+			<version>${motan.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.weibo</groupId>
+			<artifactId>motan-registry-zookeeper</artifactId>
+			<version>${motan.version}</version>
+		</dependency>
+		<!-- motan end -->
 	</dependencies>
 
 	<build>
