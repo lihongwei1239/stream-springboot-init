@@ -23,6 +23,10 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>com.stream.order</groupId>
 			<artifactId>stream-order-dao</artifactId>
 			<version>1.0.0-SNAPSHOT</version>

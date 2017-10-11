@@ -1,4 +1,4 @@
 package com.stream.order.config;
 
-public class MotanConfig {
+public class MotanConfiguration {
 }
