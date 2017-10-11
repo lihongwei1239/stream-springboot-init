@@ -26,7 +26,7 @@ public class Application {
 	}
 
 	//然后每隔1分钟执行一次
-	@Scheduled(fixedRate = 1000 * 2)
+	@Scheduled(fixedRate = 1000 * 30)
 	public void testKafka() throws Exception {
 		msgProducer.sendTest();
 	}
